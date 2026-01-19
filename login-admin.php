@@ -15,25 +15,26 @@
             <input type="password" name="password" class="form-control mb-3" placeholder="Masukan Password Anda" requuired>
             <button name="tombol" type="submit" class="btn btn-success w-100 mb-2">Login</button>
             <a href="login-anggota.php" class="text-decoration-none">Login Sebagai Anggota</a>
-        </form>
-    </div>
-</body>
-</html>
 <?php
 if(isset($_POST['tombol'])){
     include 'koneksi.php';
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $query = "SELECT*FROM admin WHERE $username='username' AND $password='password'";
+    $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
     $data = mysqli_query($koneksi, $query);
-    if(mysqli_num_rows($data)>0){
+    if($data && mysqli_num_rows($data)>0){
         $data = mysqli_fetch_array($data);
         session_start();
         $_SESSION ['id_admin'] = $data ['id_admin'];
         $_SESSION ['username'] = $data ['username'];
         $_SESSION ['nama_lengkap'] = $data ['nama_lengkap'];
         header ("Location:admin/dashboard.php");
+        exit();
     }else{
-        echo"<script>alert('❌ Maaf Login Gagal'); window.location.assign('login-admin.php');</script>.";
+        echo " <script>alert('❌ Maaf Login Anda Gagal'); window.location.assign('login-admin.php'); </script>";
     }
 }
+?>
+    </div>
+</body>
+</html>
