@@ -7,11 +7,11 @@
 
 <h4>📚 Edit Data Buku</h4>
 <form action="#" method="post" class="mt-3">
-    <input value="<?php echo $data_buku['judul_buku']; ?>" type="text" name="judul_buku" class="form-control" placeholder="Masukan Judul Buku" required>
-    <input value="<?php echo $data_buku['pengarang']; ?>" type="text" name="pengarang" class="form-control" placeholder="Masukan Nama Pengarang" required>
-    <input value="<?php echo $data_buku['penerbit']; ?>" type="text" name="penerbit" class="form-control" placeholder="Masukan Nama Penerbit" required>
-    <input value="<?php echo $data_buku['tahun_terbit']; ?>" maxlength="4" type="number" name="tahun_terbit" class="form-control" placeholder="Masukan Tahun Terbit" required>
-    <button type="submit" name="tombol" class="btn btn-primary">💾 Simpan</button>
+    <input value="<?php echo $data_buku['judul_buku']; ?>" type="text" name="judul_buku" class="form-control mb-2" placeholder="Masukan Judul Buku" required>
+    <input value="<?php echo $data_buku['pengarang']; ?>" type="text" name="pengarang" class="form-control mb-2" placeholder="Masukan Nama Pengarang" required>
+    <input value="<?php echo $data_buku['penerbit']; ?>" type="text" name="penerbit" class="form-control mb-2" placeholder="Masukan Nama Penerbit" required>
+    <input value="<?php echo $data_buku['tahun_terbit']; ?>" maxlength="4" type="number" name="tahun_terbit" class="form-control mb-2" placeholder="Masukan Tahun Terbit" required>
+    <button type="submit" name="tombol" class="btn btn-primary mt-3">💾 Simpan</button>
 </form>
 <?php
 if(isset($_POST['tombol'])){

@@ -16,7 +16,7 @@ if(empty($_SESSION['id_admin'])){
 <body class="bg-light">
     <div class="container mt-3 mb-3">
         <h4>halaman Admin | Aplikasi Perpustakaan Sekolah Digital</h4>
-        <a href="dashboard.php" class="btn btn-success text-white">Dashboarad</a>
+        <a href="#" class="btn btn-success text-white">Dashboarad</a>
         <a href="?halaman=data_buku" class="btn btn-success text-white">Buku</a>
         <a href="?halaman=data_anggota" class="btn btn-success text-white">Anggota</a>
         <a href="?halaman=data_peminjaman" class="btn btn-success text-white">Peminjaman</a>

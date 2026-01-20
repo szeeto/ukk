@@ -8,7 +8,7 @@
         <td>Judul Buku</td>
         <td>Pengarang</td>
         <td>Penerbit</td>
-        <td>Tahun Terbit</td>
+        <td>Tahun Terbit</td> 
         <td>Status</td>
         <td>Kelola</td>
     </tr>
