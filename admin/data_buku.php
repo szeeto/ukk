@@ -14,10 +14,11 @@
     </tr>
     <?php
     $no = 1;
-    include'../koneksi.php';
+    include '../koneksi.php';
     $query = "SELECT * FROM buku ORDER BY id_buku DESC";
     $data = mysqli_query($koneksi, $query);
-    foreach($data as $buku) ?>
+    while($buku = mysqli_fetch_assoc($data)) {
+    ?>
         <tr>
             <td><?= $no++; ?></td>
             <td><?= $buku['judul_buku'] ?></td>
@@ -26,9 +27,9 @@
             <td><?= $buku['tahun_terbit'] ?></td>
             <td><?= $buku['status'] ?></td>
             <td>
-        <a href="?halaman=edit_buku&id=<?= $buku['id_buku'] ?> " class="btn btn-warning">✏️Edit</a>
-        <a onclick="return confirm('Yakin Hapus Data') href="?halaman=hapus_buku&id=<?= $buku['id_buku'] ?> " class="btn btn-danger">🗑️ hapus</a>
-    </td>
-    </tr>
-    <?php  ?>
+                <a href="?halaman=edit_buku&id=<?= $buku['id_buku'] ?>" class="btn btn-warning">✏️Edit</a>
+                <a onclick="return confirm('Yakin Hapus Data')" href="?halaman=hapus_buku&id=<?= $buku['id_buku'] ?>" class="btn btn-danger">🗑️ Hapus</a>
+            </td>
+        </tr>
+    <?php } ?>
 </table>
