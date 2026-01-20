@@ -28,7 +28,7 @@ if(isset($_POST['tombol'])){
         $_SESSION ['id_admin'] = $data ['id_admin'];
         $_SESSION ['username'] = $data ['username'];
         $_SESSION ['nama_lengkap'] = $data ['nama_lengkap'];
-        header ("Location:admin/dashboard.php");
+        header ("Location:admin/dashboard-admin.php");
         exit();
     }else{
         echo " <script>alert('❌ Maaf Login Anda Gagal'); window.location.assign('login-admin.php'); </script>";

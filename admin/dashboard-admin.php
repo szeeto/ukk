@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(empty($_SESSION['id_admin'])){
-    header("location:../login-admin.php");
+    header("location:/login-admin.php");
     
 }
 ?>
@@ -20,7 +20,7 @@ if(empty($_SESSION['id_admin'])){
         <a href="?halaman=data_buku" class="btn btn-success text-white">Buku</a>
         <a href="?halaman=data_anggota" class="btn btn-success text-white">Anggota</a>
         <a href="?halaman=data_peminjaman" class="btn btn-success text-white">Peminjaman</a>
-        <a href="logout.php" class="btn btn-danger text-white">Logout</a>
+        <a href="../logout.php" class="btn btn-danger text-white">Logout</a>
         <div class="card mt-3 p-3">
             <?php
             $halaman = isset($_GET['halaman']) ? $_GET['halaman']:"";
