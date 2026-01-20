@@ -26,8 +26,8 @@
             <td><?= $buku['tahun_terbit'] ?></td>
             <td><?= $buku['status'] ?></td>
             <td>
-        <a href="?halaman=edit&id=<?= $buku['id_buku'] ?> " class="btn btn-warning">✏️Edit</a>
-        <a onclick="return confirm('Yakin Hapus Data') href="?halaman=edit&id=<?= $buku['id_buku'] ?> " class="btn btn-danger">🗑️ hapus</a>
+        <a href="?halaman=edit_buku&id=<?= $buku['id_buku'] ?> " class="btn btn-warning">✏️Edit</a>
+        <a onclick="return confirm('Yakin Hapus Data') href="?halaman=hapus_buku&id=<?= $buku['id_buku'] ?> " class="btn btn-danger">🗑️ hapus</a>
     </td>
     </tr>
     <?php  ?>
