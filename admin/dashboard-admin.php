@@ -23,9 +23,9 @@ $nama_admin = isset($data_admin['nama_admin']) ? $data_admin['nama_admin'] : 'Ad
     <div class="container mt-3 mb-3">
         <h4>halaman Admin | Aplikasi Perpustakaan Sekolah Digital</h4>
         <a href="dashboard-admin.php" class="btn btn-success text-white">Dashboarad</a>
-        <a href="?halaman=data_buku" class="btn btn-success text-white">Buku</a>
-        <a href="?halaman=data_anggota" class="btn btn-success text-white">Anggota</a>
-        <a href="?halaman=data_peminjaman" class="btn btn-success text-white">Peminjaman</a>
+        <a href="?halaman=data_buku" class="btn btn-primary text-white">Buku</a>
+        <a href="?halaman=data_anggota" class="btn btn-info text-white">Anggota</a>
+        <a href="?halaman=data_peminjaman" class="btn btn-warning text-white">Peminjaman</a>
         <a href="../logout.php" class="btn btn-danger text-white">Logout</a>
         <div class="card mt-3 p-3">
             <?php
@@ -34,7 +34,7 @@ $nama_admin = isset($data_admin['nama_admin']) ? $data_admin['nama_admin'] : 'Ad
                 include $halaman.".php";
             }else{
                 ?>
-                <h4>Selamat Datang <?= strtolower($nama_admin);?>👋</h4>
+                <h4>Selamat Datang <?= $nama_admin;?>👋</h4>
                 <p class="text-jusify text-muted">
                     Aplikasi Perpustakaan Sekolah Digital Merupakan Sistem Berbasis Web Yang Dirancang Untuk Membantu Pengelolaan Data Buku, Data Anggota Dan Peminjaman Terorganisir
                 </p>

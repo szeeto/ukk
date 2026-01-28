@@ -25,7 +25,15 @@
             <td><?= $buku['pengarang'] ?></td>
             <td><?= $buku['penerbit'] ?></td>
             <td><?= $buku['tahun_terbit'] ?></td>
-            <td><?= $buku['status'] ?></td>
+            <td>
+                <?php
+                if (strtolower($buku['status']) == 'tersedia') {
+                    echo '<span class="badge bg-success">Tersedia</span>';
+                } else {
+                    echo '<span class="badge bg-danger">Tidak Tersedia</span>';
+                }
+                ?>
+            </td>
             <td>
                 <a href="?halaman=edit_buku&id=<?= $buku['id_buku'] ?>" class="btn btn-warning">✏️Edit</a>
                 <a onclick="return confirm('Yakin Hapus Data')" href="?halaman=hapus_buku&id=<?= $buku['id_buku'] ?>" class="btn btn-danger">🗑️ Hapus</a>

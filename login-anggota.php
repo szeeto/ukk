@@ -9,12 +9,13 @@
 <body class="bg-light">
     <div class="vh-100 row justify-content-center align-content-center">
         <form action="#" method="post" class="col-md-3 border p-4 bg-white rounded-4">
+            <img src="logo.png" width="100px" class="mx-auto d-block">
             <h4 class="text-center">Login Anggota</h4>
             <h5 class="text-center mb-3">Aplikasi Perpustakaan Sekolah Digital</h5>
             <input type="text" name="username" class="form-control mb-3" placeholder="Masukan Username Anda" requuired>
             <input type="password" name="password" class="form-control mb-3" placeholder="Masukan Password Anda" requuired>
             <button name="tombol" type="submit" class="btn btn-success w-100 mb-2">Login</button>
-            <a href="login-anggota.php" class="text-decoration-none">Login Sebagai Anggota</a><br>
+            <a href="login-admin.php" class="text-decoration-none">Login Sebagai Admin</a><br>
             <a href="pendaftaran-anggota.php" class="text-decoration-none">Pendaftraan Anggota</a><br>
 
 

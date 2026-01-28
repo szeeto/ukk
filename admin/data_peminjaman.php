@@ -32,7 +32,7 @@ $buku = mysqli_query($koneksi, "SELECT*FROM buku WHERE status='Tersedia'");
             <td><?= $no++; ?></td>
             <td><?= $peminjam['nis'] ?></td>
             <td><?= $peminjam['nama_anggota'] ?></td>
-            <td><?= $peminjam['judul_buku'] ?></td>
+            <td><?= !empty($peminjam['judul_buku']) ? $peminjam['judul_buku'] : '<span class="text-danger">(Buku tidak ditemukan)</span>' ?></td>
             <td><?= $peminjam['tgl_pinjam'] ?></td>
             <td>
                 <?php
@@ -76,7 +76,7 @@ $buku = mysqli_query($koneksi, "SELECT*FROM buku WHERE status='Tersedia'");
             <td><?= $no++; ?></td>
             <td><?= $peminjam['nis'] ?></td>
             <td><?= $peminjam['nama_anggota'] ?></td>
-            <td><?= $peminjam['judul_buku'] ?></td>
+            <td><?= !empty($peminjam['judul_buku']) ? $peminjam['judul_buku'] : '<span class="text-danger">(Buku tidak ditemukan)</span>' ?></td>
             <td><?= $peminjam['tgl_pinjam'] ?></td>
             <td><?= $peminjam['tgl_kembali'] ?></td>
             <td>

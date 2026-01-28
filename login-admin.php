@@ -9,6 +9,7 @@
 <body class="bg-light">
     <div class="vh-100 row justify-content-center align-content-center">
         <form action="#" method="post" class="col-md-3 border p-4 bg-white rounded-4">
+            <img src="logo.png" width="100px" class="mx-auto d-block">
             <h4 class="text-center">Login Admin</h4>
             <h5 class="text-center mb-3">Aplikasi Perpustakaan Sekolah Digital</h5>
             <input type="text" name="username" class="form-control mb-3" placeholder="Masukan Username Anda" requuired>
