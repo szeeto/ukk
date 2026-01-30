@@ -41,4 +41,5 @@ if(isset($_POST['tombol'])){
 ?>
     </div>
 </body>
+<?php include 'footer.php'; ?>
 </html>

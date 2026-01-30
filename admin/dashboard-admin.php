@@ -42,4 +42,5 @@ $nama_admin = isset($data_admin['nama_admin']) ? $data_admin['nama_admin'] : 'Ad
         </div>
     </div>
 </body>
+<?php include '../footer.php'; ?>
 </html>

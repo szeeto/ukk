@@ -41,3 +41,4 @@
         <tr><td colspan="4" class="text-center text-muted">Belum ada pengembalian buku.</td></tr>
     <?php } ?>
 </table>
+<?php include '../footer.php'; ?>

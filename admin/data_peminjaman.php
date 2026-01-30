@@ -101,3 +101,4 @@ $buku = mysqli_query($koneksi, "SELECT*FROM buku WHERE status='Tersedia'");
         }
     }
 </script>
+<?php include '../footer.php'; ?>

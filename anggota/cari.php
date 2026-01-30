@@ -45,3 +45,4 @@ while ($buku = mysqli_fetch_assoc($data_buku)) {
     </div>
 <?php } ?>
 </div>
+<?php include '../footer.php'; ?>

@@ -33,3 +33,4 @@
         </tr>
     <?php } ?>
 </table>
+<?php include '../footer.php'; ?>

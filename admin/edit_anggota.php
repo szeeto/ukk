@@ -30,3 +30,4 @@ if(isset($_POST['tombol'])){
         echo "<script>alert('❌ Data Gagal Disimpan'); window.location.assign('?halaman=data_anggota');</script>";
     }
 }
+include '../footer.php';
